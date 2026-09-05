@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import os
 import shutil
 import subprocess
+import sys
 import time
 from pathlib import Path
 from typing import Any
@@ -95,8 +97,11 @@ class PiperTTS(BaseTool):
     side_effects = ["writes audio file to output_path"]
     user_visible_verification = ["Listen to generated audio for intelligibility"]
 
+    def _find_piper(self) -> Optional[str]:
+        return shutil.which("piper") or shutil.which("piper", path=os.path.dirname(sys.executable))
+
     def get_status(self) -> ToolStatus:
-        if shutil.which("piper"):
+        if self._find_piper():
             return ToolStatus.AVAILABLE
         return ToolStatus.UNAVAILABLE
 
@@ -119,10 +124,11 @@ class PiperTTS(BaseTool):
     def _generate(self, inputs: dict[str, Any]) -> ToolResult:
         output_path = Path(inputs.get("output_path", "tts_output.wav"))
         output_path.parent.mkdir(parents=True, exist_ok=True)
+        piper_bin = self._find_piper() or "piper"
 
         proc = subprocess.run(
             [
-                "piper",
+                piper_bin,
                 "--model", inputs.get("model", "en_US-lessac-medium"),
                 "--speaker", str(inputs.get("speaker_id", 0)),
                 "--length-scale", str(inputs.get("length_scale", 1.0)),
