@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def generate_v4_audio():
-    script_path = os.path.join("projects", "august-happy-tails-adoptions", "artifacts", "august_sample_script.md")
+def generate_full_audio():
+    script_path = os.path.join("projects", "august-happy-tails-adoptions", "artifacts", "august_full_script.md")
     with open(script_path, "r", encoding="utf-8") as f:
         text = f.read().strip()
 
@@ -16,7 +16,7 @@ def generate_v4_audio():
         print("ERROR: Missing ELEVENLABS_API_KEY")
         sys.exit(1)
 
-    out_path = os.path.join("projects", "august-happy-tails-adoptions", "assets", "audio", "august_happy_tails_sample_v4_eleven_v3.mp3")
+    out_path = os.path.join("projects", "august-happy-tails-adoptions", "assets", "audio", "august_happy_tails_full_eleven_v3.mp3")
 
     print(f"Generating Eleven v3 TTS with voice_id={voice_id}...")
     print(f"Model: eleven_v3, Stability: 0.55, Format: mp3_44100_128")
@@ -57,4 +57,4 @@ def generate_v4_audio():
     print(f"Size: {file_size_kb:.1f} KB, Characters: {char_count}, Estimated cost: ${cost:.4f}")
 
 if __name__ == "__main__":
-    generate_v4_audio()
+    generate_full_audio()

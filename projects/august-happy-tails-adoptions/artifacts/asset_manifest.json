@@ -7,7 +7,7 @@
       "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Lexie Adoption.jpg",
       "source_tool": "user_upload",
       "scene_id": "scene-lexie",
-      "duration_seconds": 21.6
+      "duration_seconds": 25.9
     },
     {
       "id": "img-cerberus",
@@ -15,7 +15,7 @@
       "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Cerberus Adoption.jpg",
       "source_tool": "user_upload",
       "scene_id": "scene-cerberus",
-      "duration_seconds": 28.4
+      "duration_seconds": 33.2
     },
     {
       "id": "img-kraken",
@@ -23,7 +23,7 @@
       "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Kraken Adoption.jpg",
       "source_tool": "user_upload",
       "scene_id": "scene-kraken",
-      "duration_seconds": 29.1
+      "duration_seconds": 32.8
     },
     {
       "id": "img-mermaid",
@@ -31,7 +31,63 @@
       "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Mermaid Adoption.jpg",
       "source_tool": "user_upload",
       "scene_id": "scene-mermaid",
-      "duration_seconds": 25.9
+      "duration_seconds": 24.9
+    },
+    {
+      "id": "img-pegasus",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Pegasus Adoption.jpeg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-pegasus",
+      "duration_seconds": 22.9
+    },
+    {
+      "id": "img-dallas",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Dallas Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-dallas",
+      "duration_seconds": 26.1
+    },
+    {
+      "id": "img-yeti",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Yeti Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-yeti",
+      "duration_seconds": 24.8
+    },
+    {
+      "id": "img-griffin",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Griffin Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-griffin",
+      "duration_seconds": 20.9
+    },
+    {
+      "id": "img-dawson",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Dawson Adoption.jpeg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-dawson",
+      "duration_seconds": 21.2
+    },
+    {
+      "id": "img-papi",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Papi Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-papi",
+      "duration_seconds": 21.5
+    },
+    {
+      "id": "img-darlin",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Darlin Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-darlin",
+      "duration_seconds": 22.5
     },
     {
       "id": "img-ctdr-logo",
@@ -39,15 +95,15 @@
       "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\ctdr.png",
       "source_tool": "user_upload",
       "scene_id": "global",
-      "duration_seconds": 134.54
+      "duration_seconds": 322.08
     },
     {
       "id": "audio-narration",
       "type": "narration",
-      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_sample_v4_eleven_v3.mp3",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_full_eleven_v3.mp3",
       "source_tool": "elevenlabs_tts",
       "scene_id": "global",
-      "duration_seconds": 147.28
+      "duration_seconds": 322.08
     }
   ]
 }

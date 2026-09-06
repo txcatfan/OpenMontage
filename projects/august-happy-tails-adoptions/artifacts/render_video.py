@@ -12,7 +12,7 @@ def run():
     proj_dir = os.path.join(os.path.abspath("."), "projects", "august-happy-tails-adoptions")
     edit_decisions_path = os.path.join(proj_dir, "artifacts", "edit_decisions.json")
     asset_manifest_path = os.path.join(proj_dir, "artifacts", "asset_manifest.json")
-    output_path = os.path.join(proj_dir, "renders", "happy_tails_august_sample_v4.mp4")
+    output_path = os.path.join(proj_dir, "renders", "happy_tails_august_full.mp4")
 
     with open(edit_decisions_path, "r", encoding="utf-8") as f:
         edit_decisions = json.load(f)
@@ -20,7 +20,7 @@ def run():
     with open(asset_manifest_path, "r", encoding="utf-8") as f:
         asset_manifest = json.load(f)
 
-    print("Starting VideoCompose for Test Video #4...")
+    print("Starting VideoCompose for Full August Happy Tails Video (11 Dogs)...")
     print(f"Output: {output_path}")
 
     composer = VideoCompose()
@@ -28,13 +28,15 @@ def run():
         "operation": "render",
         "edit_decisions": edit_decisions,
         "asset_manifest": asset_manifest,
-        "output_path": output_path
+        "output_path": output_path,
+        "timeout": 4500,
+        "concurrency": 8,
     })
 
     print("Compose finished!")
     print("Success:", result.success)
     if result.success:
-        print("Output:", result.artifacts.get("output_path", output_path))
+        print("Output saved to:", output_path)
         print("Duration seconds:", result.duration_seconds)
     else:
         print("Error:", result.error)

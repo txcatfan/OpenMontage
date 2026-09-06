@@ -1669,10 +1669,9 @@ class VideoCompose(BaseTool):
             # Forward the creator-facing render timeout through the high-level
             # render path (execute(operation="render") -> _render), otherwise it
             # would only take effect on a direct _remotion_render() call.
-            if inputs.get("remotion_timeout_ms") is not None:
-                remotion_inputs["remotion_timeout_ms"] = inputs["remotion_timeout_ms"]
-            if inputs.get("public_dir") is not None:
-                remotion_inputs["public_dir"] = inputs["public_dir"]
+            for k in ("remotion_timeout_ms", "timeout", "timeout_seconds", "concurrency", "public_dir"):
+                if inputs.get(k) is not None:
+                    remotion_inputs[k] = inputs[k]
             render_result = self._remotion_render(remotion_inputs)
 
             # Governance: NEVER silently fall back to FFmpeg when Remotion fails.

@@ -3,9 +3,9 @@
   "render_runtime": "remotion",
   "renderer_family": "explainer-data",
   "metadata": {
-    "title": "August Happy Tails Adoptions - Test Video #4",
-    "sample_run": true,
-    "dog_count": 4,
+    "title": "August Happy Tails Adoptions - Full Episode",
+    "sample_run": false,
+    "dog_count": 11,
     "host": "Charlie",
     "show": "Lone Star Doxie Talk"
   },
@@ -36,8 +36,8 @@
   },
   "audio": {
     "narration": {
-      "src": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_sample_v4_eleven_v3.mp3",
-      "source": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_sample_v4_eleven_v3.mp3",
+      "src": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_full_eleven_v3.mp3",
+      "source": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_full_eleven_v3.mp3",
       "volume": 1.0
     }
   },
@@ -53,7 +53,7 @@
       "color": "#F59E0B",
       "accentColor": "#F59E0B",
       "in_seconds": 0.0,
-      "out_seconds": 19.14,
+      "out_seconds": 19.5,
       "animation": "zoom-in"
     },
     {
@@ -62,8 +62,8 @@
       "source": "img-lexie",
       "title": "Lexie",
       "objectFit": "contain",
-      "in_seconds": 19.14,
-      "out_seconds": 44.39,
+      "in_seconds": 19.5,
+      "out_seconds": 45.4,
       "animation": "ken-burns"
     },
     {
@@ -72,8 +72,8 @@
       "source": "img-cerberus",
       "title": "Cerberus",
       "objectFit": "contain",
-      "in_seconds": 44.39,
-      "out_seconds": 75.8,
+      "in_seconds": 45.4,
+      "out_seconds": 78.6,
       "animation": "ken-burns"
     },
     {
@@ -82,8 +82,8 @@
       "source": "img-kraken",
       "title": "Kraken",
       "objectFit": "contain",
-      "in_seconds": 75.8,
-      "out_seconds": 108.36,
+      "in_seconds": 78.6,
+      "out_seconds": 111.4,
       "animation": "ken-burns"
     },
     {
@@ -92,22 +92,92 @@
       "source": "img-mermaid",
       "title": "Mermaid",
       "objectFit": "contain",
-      "in_seconds": 108.36,
-      "out_seconds": 135.02,
+      "in_seconds": 111.4,
+      "out_seconds": 136.3,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-pegasus",
+      "type": "image",
+      "source": "img-pegasus",
+      "title": "Pegasus",
+      "objectFit": "contain",
+      "in_seconds": 136.3,
+      "out_seconds": 159.2,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-dallas",
+      "type": "image",
+      "source": "img-dallas",
+      "title": "Dallas",
+      "objectFit": "contain",
+      "in_seconds": 159.2,
+      "out_seconds": 185.3,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-yeti",
+      "type": "image",
+      "source": "img-yeti",
+      "title": "Yeti",
+      "objectFit": "contain",
+      "in_seconds": 185.3,
+      "out_seconds": 210.1,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-griffin",
+      "type": "image",
+      "source": "img-griffin",
+      "title": "Griffin",
+      "objectFit": "contain",
+      "in_seconds": 210.1,
+      "out_seconds": 231.0,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-dawson",
+      "type": "image",
+      "source": "img-dawson",
+      "title": "Dawson",
+      "objectFit": "contain",
+      "in_seconds": 231.0,
+      "out_seconds": 252.2,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-papi",
+      "type": "image",
+      "source": "img-papi",
+      "title": "Papi",
+      "objectFit": "contain",
+      "in_seconds": 252.2,
+      "out_seconds": 273.7,
+      "animation": "ken-burns"
+    },
+    {
+      "id": "cut-darlin",
+      "type": "image",
+      "source": "img-darlin",
+      "title": "Darlin",
+      "objectFit": "contain",
+      "in_seconds": 273.7,
+      "out_seconds": 296.2,
       "animation": "ken-burns"
     },
     {
       "id": "cut-outro",
       "type": "hero_title",
-      "source": "img-mermaid",
+      "source": "img-darlin",
       "logoSrc": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\ctdr.png",
       "logoSize": 520,
       "text": "Happy Tails",
       "heroSubtitle": "Thank You Fosters, Adopters & Supporters",
       "color": "#F59E0B",
       "accentColor": "#F59E0B",
-      "in_seconds": 135.02,
-      "out_seconds": 147.28,
+      "in_seconds": 296.2,
+      "out_seconds": 322.08,
       "animation": "zoom-out"
     }
   ],
@@ -116,8 +186,8 @@
       "type": "section_title",
       "text": "Lexie",
       "subtitle": "Bruce & Martha \u2022 Round Rock, TX",
-      "in_seconds": 19.14,
-      "out_seconds": 43.5,
+      "in_seconds": 19.5,
+      "out_seconds": 44.5,
       "position": "bottom-left",
       "accentColor": "#F59E0B"
     },
@@ -125,8 +195,8 @@
       "type": "section_title",
       "text": "Cerberus",
       "subtitle": "Dave & Beth \u2022 Round Rock, TX",
-      "in_seconds": 44.39,
-      "out_seconds": 74.8,
+      "in_seconds": 45.4,
+      "out_seconds": 77.6,
       "position": "bottom-left",
       "accentColor": "#F59E0B"
     },
@@ -134,8 +204,8 @@
       "type": "section_title",
       "text": "Kraken",
       "subtitle": "Scott \u2022 Leander, TX",
-      "in_seconds": 75.8,
-      "out_seconds": 107.4,
+      "in_seconds": 78.6,
+      "out_seconds": 110.4,
       "position": "bottom-left",
       "accentColor": "#F59E0B"
     },
@@ -143,8 +213,71 @@
       "type": "section_title",
       "text": "Mermaid",
       "subtitle": "Fostered by Perla \u2022 Adopted by Jennifer (Austin, TX)",
-      "in_seconds": 108.36,
-      "out_seconds": 134.0,
+      "in_seconds": 111.4,
+      "out_seconds": 135.3,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Pegasus",
+      "subtitle": "Fostered by Alison \u2022 Adopted by Peter & Heather (Hutto, TX)",
+      "in_seconds": 136.3,
+      "out_seconds": 158.2,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Dallas",
+      "subtitle": "Fostered & Adopted by Chad & Tammy (Manchaca, TX)",
+      "in_seconds": 159.2,
+      "out_seconds": 184.3,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Yeti",
+      "subtitle": "Adopted by Tate (Austin, TX)",
+      "in_seconds": 185.3,
+      "out_seconds": 209.1,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Griffin",
+      "subtitle": "Fostered by Alison \u2022 Adopted by John & Brianna (Spicewood, TX)",
+      "in_seconds": 210.1,
+      "out_seconds": 230.0,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Dawson",
+      "subtitle": "Fostered by Christine \u2022 Adopted by Amber & Michael (Elgin, TX)",
+      "in_seconds": 231.0,
+      "out_seconds": 251.2,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Papi",
+      "subtitle": "Boarded at Day Lily \u2022 Adopted by Maggie (Spring, TX)",
+      "in_seconds": 252.2,
+      "out_seconds": 272.7,
+      "position": "bottom-left",
+      "accentColor": "#F59E0B"
+    },
+    {
+      "type": "section_title",
+      "text": "Darlin",
+      "subtitle": "Fostered & Adopted by George (Cibolo, TX)",
+      "in_seconds": 273.7,
+      "out_seconds": 295.2,
       "position": "bottom-left",
       "accentColor": "#F59E0B"
     }
