@@ -231,6 +231,9 @@ interface Cut {
   progressSegments?: any[];
   // Hero title props (when used as scene, not overlay)
   heroSubtitle?: string;
+  logoSrc?: string;
+  logoSize?: number;
+  objectFit?: "cover" | "contain";
   // Styling overrides
   backgroundColor?: string;
   cardBackgroundColor?: string; // Inner card surface (comparison); defaults to theme.surfaceColor
@@ -276,6 +279,7 @@ interface Overlay {
   out_seconds: number;
   text?: string;
   subtitle?: string;
+  logoSrc?: string;
   accentColor?: string;
   position?: string;
   // provider_chip
@@ -285,7 +289,8 @@ interface Overlay {
 }
 
 interface AudioLayer {
-  src: string;
+  src?: string;
+  source?: string;
   volume?: number;
 }
 
@@ -345,9 +350,10 @@ const Vignette: React.FC = () => (
 // Enhanced Image Scene — spring physics, parallax, variety
 // ---------------------------------------------------------------------------
 
-const ImageScene: React.FC<{ src: string; animation?: string }> = ({
+const ImageScene: React.FC<{ src: string; animation?: string; objectFit?: "cover" | "contain" }> = ({
   src,
   animation,
+  objectFit = "contain",
 }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
@@ -374,31 +380,85 @@ const ImageScene: React.FC<{ src: string; animation?: string }> = ({
   });
 
   if (anim === "zoom-in") {
-    scale = 1 + progress * 0.18;
+    scale = 1 + progress * 0.08;
   } else if (anim === "zoom-out") {
-    scale = 1.18 - progress * 0.18;
+    scale = 1.08 - progress * 0.08;
   } else if (anim === "pan-left") {
-    translateX = interpolate(progress, [0, 1], [40, -40]);
-    scale = 1.15;
+    translateX = interpolate(progress, [0, 1], [25, -25]);
+    scale = 1.05;
   } else if (anim === "pan-right") {
-    translateX = interpolate(progress, [0, 1], [-40, 40]);
-    scale = 1.15;
+    translateX = interpolate(progress, [0, 1], [-25, 25]);
+    scale = 1.05;
   } else if (anim === "ken-burns" || anim === "ken-burns-slow-zoom") {
-    // Cinematic Ken Burns: gentle zoom + diagonal drift
-    scale = 1 + progress * 0.22;
-    translateX = interpolate(progress, [0, 1], [0, -25]);
-    translateY = interpolate(progress, [0, 1], [0, -15]);
+    // Cinematic Ken Burns: gentle zoom + subtle drift
+    scale = 1 + progress * 0.10;
+    translateX = interpolate(progress, [0, 1], [0, -15]);
+    translateY = interpolate(progress, [0, 1], [0, -10]);
   } else if (anim === "parallax") {
-    // Subtle parallax — foreground moves faster
-    translateY = interpolate(progress, [0, 1], [15, -15]);
-    scale = 1.1;
+    translateY = interpolate(progress, [0, 1], [10, -10]);
+    scale = 1.05;
   }
-  // "static" or "none" → just display
+
+  const resolvedSrc = resolveAsset(src);
+
+  if (objectFit === "contain") {
+    return (
+      <AbsoluteFill style={{ overflow: "hidden", background: "#0B0F19" }}>
+        {/* Blurred ambient backdrop matching image colors */}
+        <AbsoluteFill style={{ overflow: "hidden" }}>
+          <Img
+            src={resolvedSrc}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              filter: "blur(40px) brightness(0.35) saturate(1.2)",
+              transform: "scale(1.25)",
+            }}
+          />
+        </AbsoluteFill>
+
+        {/* Foreground sharp image preserving 100% full framing */}
+        <AbsoluteFill
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "36px 60px",
+          }}
+        >
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              opacity: fadeIn * fadeOut,
+              transform: `scale(${scale}) translate(${translateX}px, ${translateY}px)`,
+              willChange: "transform, opacity",
+            }}
+          >
+            <Img
+              src={resolvedSrc}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                objectFit: "contain",
+                borderRadius: 20,
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1)",
+              }}
+            />
+          </div>
+        </AbsoluteFill>
+        <Vignette />
+      </AbsoluteFill>
+    );
+  }
 
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#0F172A" }}>
       <Img
-        src={resolveAsset(src)}
+        src={resolvedSrc}
         style={{
           width: "100%",
           height: "100%",
@@ -625,6 +685,8 @@ const SceneRenderer: React.FC<{ cut: Cut; theme: ThemeConfig }> = ({ cut, theme 
       <HeroTitle
         title={cut.text}
         subtitle={cut.heroSubtitle || cut.subtitle}
+        logoSrc={cut.logoSrc}
+        logoSize={cut.logoSize}
         accentColor={accent}
         textColor={textColor}
         subtitleColor={theme.mutedTextColor}
@@ -748,7 +810,7 @@ const SceneRenderer: React.FC<{ cut: Cut; theme: ThemeConfig }> = ({ cut, theme 
   const animation = cut.animation || cut.transform?.animation;
 
   if (cut.source && isImage(cut.source)) {
-    return maybeWrapWithBg(<ImageScene src={cut.source} animation={animation} />);
+    return maybeWrapWithBg(<ImageScene src={cut.source} animation={animation} objectFit={cut.objectFit} />);
   }
 
   if (cut.source && isVideo(cut.source)) {
@@ -767,7 +829,7 @@ const SceneRenderer: React.FC<{ cut: Cut; theme: ThemeConfig }> = ({ cut, theme 
 
   // Final fallback — try as image if source exists, otherwise show text_card
   if (cut.source) {
-    return maybeWrapWithBg(<ImageScene src={cut.source} animation={animation} />);
+    return maybeWrapWithBg(<ImageScene src={cut.source} animation={animation} objectFit={cut.objectFit} />);
   }
 
   // No source, no type — render as text card with cut id as fallback
@@ -809,6 +871,7 @@ const OverlayRenderer: React.FC<{ overlay: Overlay; theme: ThemeConfig }> = ({
       <HeroTitle
         title={overlay.text ?? ""}
         subtitle={overlay.subtitle}
+        logoSrc={overlay.logoSrc}
         accentColor={overlay.accentColor || theme.accentColor}
         textColor={theme.textColor}
         subtitleColor={theme.mutedTextColor}
@@ -885,14 +948,14 @@ export const Explainer: React.FC<ExplainerProps> = (props) => {
       )}
 
       {/* Layer 4: Audio — narration */}
-      {audio?.narration?.src && (
-        <Audio src={resolveAsset(audio.narration.src)} volume={audio.narration.volume ?? 1} />
+      {(audio?.narration?.src || audio?.narration?.source) && (
+        <Audio src={resolveAsset(audio.narration.src || audio.narration.source!)} volume={audio.narration.volume ?? 1} />
       )}
 
       {/* Layer 4: Audio — music with offset, fade in/out, and optional loop */}
-      {audio?.music?.src && (
+      {(audio?.music?.src || audio?.music?.source) && (
         <Audio
-          src={resolveAsset(audio.music.src)}
+          src={resolveAsset(audio.music.src || audio.music.source!)}
           startFrom={Math.round((audio.music.offsetSeconds ?? 0) * fps)}
           loop={audio.music.loop ?? false}
           loopVolumeCurveBehavior="repeat"

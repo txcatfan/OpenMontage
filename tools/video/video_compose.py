@@ -34,6 +34,7 @@ import contextlib
 import json
 import hashlib
 import logging
+import os
 import secrets
 import shutil
 import subprocess
@@ -896,7 +897,7 @@ class VideoCompose(BaseTool):
         """
 
         staged_by_source: dict[Path, str] = {}
-        media_keys = {"source", "src", "backgroundSrc"}
+        media_keys = {"source", "src", "backgroundSrc", "logoSrc", "backgroundImage", "backgroundVideo"}
 
         def visit(node: Any, parent_key: str | None = None) -> Any:
             if isinstance(node, dict):
@@ -1020,7 +1021,9 @@ class VideoCompose(BaseTool):
         output_path = Path(inputs.get("output_path", "renders/output.mp4")).resolve()
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
-        cmd = ["npx", "remotion", "render", str(effective_entry), str(comp_id), str(output_path)]
+        remotion_cli = composer_dir / "node_modules" / "@remotion" / "cli" / "remotion-cli.js"
+        cli_prefix = ["node", str(remotion_cli)] if remotion_cli.exists() and shutil.which("node") else ["npx", "remotion"]
+        cmd = [*cli_prefix, "render", str(effective_entry), str(comp_id), str(output_path)]
 
         props_path = bespoke.get("props_path")
         if props_path:
@@ -1685,7 +1688,7 @@ class VideoCompose(BaseTool):
                         f"Options:\n"
                         f"  1. Fix Remotion setup (cd remotion-composer && npm install)\n"
                         f"  2. Re-run with operation='compose' for FFmpeg-only (video cuts only)\n"
-                        f"  3. Approve a degraded FFmpeg render (still images → Ken Burns)\n\n"
+                        f"  3. Approve a degraded FFmpeg render (still images -> Ken Burns)\n\n"
                         f"Per governance: renderer downgrade requires user approval."
                     ),
                 )
@@ -2047,8 +2050,10 @@ class VideoCompose(BaseTool):
             with open(props_path, "w", encoding="utf-8") as f:
                 json.dump(props, f)
 
+            remotion_cli = composer_dir / "node_modules" / "@remotion" / "cli" / "remotion-cli.js"
+            cli_prefix = ["node", str(remotion_cli)] if remotion_cli.exists() and shutil.which("node") else ["npx", "remotion"]
             cmd = [
-                "npx", "remotion", "render",
+                *cli_prefix, "render",
                 str(composer_dir / "src" / "index.tsx"),
                 composition_id,
                 str(output_path),
@@ -2071,6 +2076,9 @@ class VideoCompose(BaseTool):
                 except (ImportError, ValueError):
                     pass
 
+            concurrency = inputs.get("concurrency") or min(8, max(2, (os.cpu_count() or 4) // 2))
+            cmd.append(f"--concurrency={concurrency}")
+
             # Optional creator-facing render timeout. Remotion's `--timeout` (ms)
             # governs headless-browser setup and delayRender(); on slow machines or
             # restricted networks the default 30s browser setup times out with an
@@ -2078,7 +2086,11 @@ class VideoCompose(BaseTool):
             # so run_command() does not kill Remotion before its own timeout fires.
             remotion_timeout_ms = inputs.get("remotion_timeout_ms")
             scene_count = len(props.get("scenes") or props.get("cuts") or [])
-            subprocess_timeout = max(600, scene_count * 15)
+            user_timeout = inputs.get("timeout") or inputs.get("timeout_seconds")
+            if user_timeout:
+                subprocess_timeout = int(user_timeout)
+            else:
+                subprocess_timeout = max(1800, scene_count * 60)
             if remotion_timeout_ms:
                 try:
                     ms = int(remotion_timeout_ms)

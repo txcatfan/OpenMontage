@@ -1,0 +1,9 @@
+This looks really good.   The pictures of the dogs now fully capture their face.  The host TTS audio sounds more natural.   Couple of changes based on "happy_tails_august_sample_v2.mp4":
+
+1.  I'd like to be able to make some manual edits to the generated script before we submit to ElevenLabs for processing.    
+
+2.  Can the CTDR logo in the Opening Hook and Outro be made larger or would it become too pixelated?    Currently it's too small relative to the text.  It would need to be about 3x the current size to be readable.  Is there anyway to generate a screenshot of what that would look like before we generate a whole new video?   If this cannot be resized due to the quality of the logo, let me know.  
+
+3.  I'd like to remove the subtitles from the video.  
+
+4.  There are a few points in the video where the picture of the dog appears before the dialog mentions that dog.   Is there a way to get that sync'd more tightly such that the initial appearance of a picture and the associated dialog are most closely aligned?   NOTE:  The re-synching will need to occur after I make the manual edits to the august_sample_script.md file. 

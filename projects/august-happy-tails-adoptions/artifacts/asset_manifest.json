@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "img-lexie",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Lexie Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-lexie",
+      "duration_seconds": 21.6
+    },
+    {
+      "id": "img-cerberus",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Cerberus Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-cerberus",
+      "duration_seconds": 28.4
+    },
+    {
+      "id": "img-kraken",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Kraken Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-kraken",
+      "duration_seconds": 29.1
+    },
+    {
+      "id": "img-mermaid",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\Mermaid Adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-mermaid",
+      "duration_seconds": 25.9
+    },
+    {
+      "id": "img-ctdr-logo",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\images\\ctdr.png",
+      "source_tool": "user_upload",
+      "scene_id": "global",
+      "duration_seconds": 134.54
+    },
+    {
+      "id": "audio-narration",
+      "type": "narration",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\august-happy-tails-adoptions\\assets\\audio\\august_happy_tails_sample_v4_eleven_v3.mp3",
+      "source_tool": "elevenlabs_tts",
+      "scene_id": "global",
+      "duration_seconds": 147.28
+    }
+  ]
+}

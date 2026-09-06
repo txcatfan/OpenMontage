@@ -1,0 +1,5 @@
+Ok on the TTS audio file of the dialog, it still sounds off.   When I run the same august_sample_script.md directly through the ElevenLabs.io website choosing Charlie's voice, it sounds the way that I want.   I'm wondering if perhaps there is a configuration setting we are missing?   I'm uploading a screenshot of the configuration settings for the Charlie Podcast Host voice.   Is there a way to confirm if our call to the Eleven Labs TTS is using the same settings?
+
+The sync of the pictures to the dialog audio was excellent.  I think if we can just the audio TTS to match what we get directly from ElevenLabs, we'll be in business to proceed forward.
+
+On the Opening Hook and Outro, can we once again make the CTDR logo 2x its current size?   If we can do that and keep all of the other text from those two scenes the same, it'll be ready to go.

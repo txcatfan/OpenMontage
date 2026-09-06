@@ -25,8 +25,15 @@ output/
 pipeline/
 tests/qa/output/
 
-# Project workspaces (generated assets, renders — all regenerable)
-projects/
+# Project workspaces (ignore generated assets and renders, track scripts & artifacts)
+projects/**/renders/
+projects/**/assets/
+projects/**/*.mp4
+projects/**/*.mp3
+projects/**/*.wav
+projects/**/*.jpg
+projects/**/*.jpeg
+projects/**/*.png
 
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even

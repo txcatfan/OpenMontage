@@ -1,0 +1,15 @@
+I think the video that was created is a great starting point.   There are few things that I would like to review and update:   
+
+1.  In the opening sequence, the text "Happy Tails" doesn't have consistent coloring.   The last three letters are white, but all of the previous ones are yellow.    The Yellow color looks better.
+
+2.  The text in the subtitles is all run together into one big text string.   There is no spacing between words and punctuation.
+
+3.  Two of the dogs' pictures cut off the dog's face so it wasn't completely visible.   Ideally in each shot displayed in the video the rescued dog's face will be visible.
+
+4.  During the Closing Outro, I'd like to have that say "Happy Tails" as it does in the Opening Hook and have all of the text use the yellow font color as the Opening Hook.   The remainder of the text is perfect.
+
+5.  On the Opening Hook and Closing Outro, I would like to also add displaying the Central Texas Dachshund Rescue logo (ctdr.png) which I uploaded to "\projects\august-happy-tails-adoptions\assets\images".   I would like to have the logo centered above the "Happy Tails" text that will appear in both scenes.
+
+6.  When submitting the text to ElevenLabs for the video narration to be output in Charlie's voice, that text should be formatted and sent as if it were being sent out in an email.   When the text submitted to ElevenLabs is formatted this way with the appropriate punctuation, the audio that is created will be more naturally sounding and include natural pauses where appropriate.   What we're getting currently sounds like someone reading a stream of sentences one directly after the other with no natural pauses applied.
+
+If you are able to apply these changes to the video creation process, could we run another test using the same test images that we used to create this first video?

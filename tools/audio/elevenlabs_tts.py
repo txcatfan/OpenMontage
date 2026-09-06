@@ -164,15 +164,19 @@ class ElevenLabsTTS(BaseTool):
 
         text = inputs["text"]
         voice_id = inputs.get("voice_id", self.DEFAULT_VOICE_ID)
-        model_id = inputs.get("model_id", "eleven_multilingual_v2")
+        model_id = inputs.get("model_id") or os.environ.get("ELEVENLABS_MODEL_ID", "eleven_v3")
         output_format = inputs.get("output_format", "mp3_44100_128")
         voice_settings = {
-            "stability": inputs.get("stability", 0.5),
-            "similarity_boost": inputs.get("similarity_boost", 0.75),
-            "style": inputs.get("style", 0.0),
-            "speed": inputs.get("speed", 1.0),
-            "use_speaker_boost": inputs.get("use_speaker_boost", True),
+            "stability": inputs.get("stability", 0.55 if model_id == "eleven_v3" else 0.5),
         }
+        if model_id != "eleven_v3" or "similarity_boost" in inputs:
+            voice_settings["similarity_boost"] = inputs.get("similarity_boost", 0.75)
+        if model_id != "eleven_v3" or "style" in inputs:
+            voice_settings["style"] = inputs.get("style", 0.0)
+        if "speed" in inputs:
+            voice_settings["speed"] = inputs.get("speed", 1.0)
+        if "use_speaker_boost" in inputs:
+            voice_settings["use_speaker_boost"] = inputs.get("use_speaker_boost", True)
 
         response = requests.post(
             f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
