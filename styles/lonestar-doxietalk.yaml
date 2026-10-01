@@ -1,0 +1,69 @@
+identity:
+  name: "Lone Star Doxie Talk"
+  category: "custom"
+  mood: "warm, heartfelt, rustic, conversational, Southern charm"
+  pace: "moderate"
+  best_for: "Lone Star Doxie Talk monthly video podcast episodes, rescue showcases, and adoption stories for Central Texas Dachshund Rescue"
+
+visual_language:
+  color_palette:
+    primary: ["#C25927", "#1E2A38"]
+    accent: ["#D97706", "#2563EB", "#059669"]
+    background: "#181E24"
+    text: "#F3F4F6"
+    muted: "#9CA3AF"
+  composition: "eye-level framing, intimate broadcast studio desk, clear lower thirds, centered dog portraits"
+  texture: "warm studio acoustic foam, subtle natural grain, soft ambient rim lighting"
+
+typography:
+  headings:
+    font: "Outfit"
+    weight: 700
+  body:
+    font: "Inter"
+    weight: 400
+  stat_card:
+    font: "Outfit"
+    weight: 800
+  scale_system: "major_third"
+  weight_matrix:
+    title: 800
+    heading: 700
+    body: 400
+    caption: 400
+
+motion:
+  transitions: ["fade", "slide-left", "dissolve"]
+  animation_style: "smooth, friendly, gentle spring physics for photo cards"
+  pacing_rules:
+    min_scene_hold_seconds: 3.0
+    max_scene_hold_seconds: 15.0
+    text_card_hold_seconds: 4.0
+    stat_card_hold_seconds: 3.5
+    transition_duration_seconds: 0.5
+  entrance: "gentle slide-up with subtle scale (0.96 -> 1.0)"
+  exit: "smooth fade-out"
+
+audio:
+  voice_style: "Charlie: warm, Texan/Southern, conversational, compassionate, steady pace"
+  music_mood: "warm acoustic country/folk guitar, uplifting and gentle"
+  music_volume: 0.08
+  sfx_style: "subtle soft bell chimes, warm vinyl crackle, natural room tone"
+  ducking_threshold_db: -18.0
+
+asset_generation:
+  image_prompt_prefix: "cinematic photography, warm Texas podcast studio, "
+  image_negative_prompt: "distorted, cartoonish, low resolution, blurry, oversaturated"
+  consistency_anchors:
+    - "Charlie is a smooth solid red-tan dachshund with silver muzzle hairs, dark floppy ears, brown eyes"
+    - "Dressing room: dark red velvet curtains, beige carpet, dog eye-level framing"
+    - "Studio desk: dark wood, CTDR ceramic mug, boom mic, headphones, ON AIR sign"
+    - "Show logo: LoneStar_DoxieTalk_Logo.png for title cards and outro cards"
+    - "Rescue logo: ctdr.png for lower-third badges and donation calls to action"
+
+quality_rules:
+  - "Must start main monologue with: I'm Charlie and this here's Lone Star Doxie Talk."
+  - "Must end final wrap-up with: Until next time, remember, a rescued heart never forgets."
+  - "Happy Tails embedded segment must dive straight into the dog stories without duplicating the show intro/outro"
+  - "Scripts must use double-newline paragraph breaks between sections for natural ElevenLabs TTS cadence"
+  - "All adoption dog photos must be formatted in high-contrast card frames with dog name and adoption month"

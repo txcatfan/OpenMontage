@@ -138,8 +138,13 @@ class KlingVideo(BaseTool):
             payload["duration"] = inputs["duration"]
         if inputs.get("aspect_ratio"):
             payload["aspect_ratio"] = inputs["aspect_ratio"]
-        if operation == "image_to_video" and inputs.get("image_url"):
-            payload["image_url"] = inputs["image_url"]
+        if operation == "image_to_video":
+            if inputs.get("image_url"):
+                payload["image_url"] = inputs["image_url"]
+            elif inputs.get("image_path"):
+                from tools.video._shared import upload_image_fal
+
+                payload["image_url"] = upload_image_fal(inputs["image_path"])
 
         headers = {
             "Authorization": f"Key {api_key}",

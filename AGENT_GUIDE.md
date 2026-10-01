@@ -112,6 +112,15 @@ The agent must ask the user before changing any major production choice, includi
 - dropping narration, music, or other approved creative elements,
 - changing from sample mode to batch mode.
 
+### Mandatory Reference Image Human Review (HARD RULE)
+
+Whenever an AI reference image or costume/wardrobe reference is generated (e.g., via FLUX, Recraft, Imagen, or image-edit tools) to be used as input conditioning for a downstream video generation task (e.g., Seedance, Kling, Hailuo/MiniMax, VEO, LTX):
+
+1. **Do NOT automatically proceed to video generation in the same turn.**
+2. **Present the generated reference image(s) directly to the user** with a clickable link and visual preview.
+3. **Explicitly ask for human approval / review** of the reference image's subject identity, costume details, colors, and proportions.
+4. **Wait for explicit user confirmation** before submitting the downstream video generation job.
+
 Minor prompt refinements inside an already approved provider/model path do not require separate approval unless they materially change the creative direction.
 
 ### Re-log Changed Decisions (Binding)
