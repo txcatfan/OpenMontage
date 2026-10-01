@@ -101,7 +101,7 @@ Every episode progresses through 7 clear stages with **Human-in-the-Loop (HITL)*
 * **Checkpoint:** You review the episode plan, segment lineup, and confirmed asset availability.
 
 ### Stage 2: Scriptwriting (`script`)
-* **What happens:** The agent drafts Charlie's scripts:
+* **What happens:** The agent drafts Charlie's scripts using authentic few-shot style samples from `assets/lonestar-doxietalk/style_references/`:
   * Main monologue (starts with mandatory greeting)
   * Happy Tails bios (conversational, dog-centered)
   * Conclusion recap (ends with mandatory sign-off)
