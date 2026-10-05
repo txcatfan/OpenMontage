@@ -22,8 +22,8 @@ Charlie's voice and personality are sacred to the show. Any content creator or A
 
 ### Mandatory Anchor Lines:
 1. **Show Opening Anchor:**
-   > *"I'm Charlie and this here's Lone Star Doxie Talk."*  
-   *(Must be the very first line spoken in the main episode monologue).*
+   > *"Pull up a chair and sit a spell.   I'm Charlie and this here's Lone Star Doxie Talk."*  
+   *(Default opening line spoken in the main episode monologue; can be overridden for special themed or seasonal editions).*
 2. **Show Closing Anchor:**
    > *"Until next time, remember, a rescued heart never forgets."*  
    *(Must be the final sentence spoken before the outro music/credits).*
@@ -70,12 +70,12 @@ OpenMontage automates the assembly of Lone Star Doxie Talk using the **`lonestar
 | **Pipeline Manifest** | OpenMontage Pipeline Engine | `pipeline_defs/lonestar-doxietalk.yaml` |
 | **Style Playbook** | OpenMontage Style Engine | `styles/lonestar-doxietalk.yaml` |
 | **Host Voice (TTS)** | ElevenLabs (`elevenlabs_tts`) | `CHARLIE_VOICE_ID=GdPqjbdsuwHYqzHrC45c` |
-| **Host Visual Avatar** | Kling AI Avatar / Seedance 2.5 | Default Studio Portrait: `assets/lonestar-doxietalk/charlie_podcast_host_16x9.png` (or seasonal variant: `assets/lonestar-doxietalk/halloween_charlie_podcast_host_16x9.png`) |
+| **Host Visual Avatar** | Kling AI Avatar (`fal-ai/kling-video/ai-avatar/v2/standard`) | Default Studio Portrait: `assets/lonestar-doxietalk/charlie_podcast_host_16x9.png` (or seasonal variant). **Default Prompt:** `"The dachshund podcast host looks into the camera and calmly speaks to his audience with natural, precise lip sync. He makes very small, subtle gestures with his paws as he speaks. His facial expressions remain calm and professional."` |
 | **Show Logo** | Brand Asset (Overlay / Outro) | `assets/lonestar-doxietalk/LoneStar_DoxieTalk_Logo.png` (1024x1024 transparent RGBA PNG) |
 | **Rescue Logo (CTDR)** | Brand Asset (Lower-thirds / Outro) | `assets/lonestar-doxietalk/ctdr.png` (486x486 transparent RGBA PNG) |
-| **Happy Tails Showcase** | Remotion Composition Engine | Animated dog cards, lower-thirds, smooth transitions |
-| **BGM Music** | AudioMixer & Local Library | Warm acoustic country/folk guitar ducked at -18dB under dialogue |
-| **Master Video Export** | FFmpeg / OpenMontage Stitcher | 1080p/720p 16:9 MP4 (`renders/final_episode.mp4`) |
+| **Happy Tails Showcase** | Remotion Composition Engine | Default presentation style based on `august-happy-tails-adoptions`: animated photo cards with gentle spring physics, centered dog portraits, adoption dates, CTDR watermark badge, and Charlie narration. |
+| **BGM Music** | AudioMixer & Local Library | Warm acoustic country/folk guitar ducked at -18dB under dialogue (or bypassed when user mixes in CapCut) |
+| **Master Video Export** | FFmpeg / OpenMontage Stitcher / CapCut | 1080p/720p 16:9 MP4 (`renders/final_episode.mp4`) |
 
 ---
 

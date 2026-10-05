@@ -6,8 +6,8 @@ Use at Stage 2 (`script`) to write Charlie's spoken dialogue for all segments of
 ## Core Rules for Charlie's Voice
 
 ### Mandatory Anchor Lines:
-1. **Episode Monologue Opening:** Must start exactly with:
-   > *"I'm Charlie and this here's Lone Star Doxie Talk."*
+1. **Episode Monologue Opening:** Default opening (can be overridden for special editions):
+   > *"Pull up a chair and sit a spell.   I'm Charlie and this here's Lone Star Doxie Talk."*
 2. **Episode Conclusion Sign-Off:** Must end exactly with:
    > *"Until next time, remember, a rescued heart never forgets."*
 

@@ -62,7 +62,7 @@ stages:
     checkpoint_required: true
     human_approval_default: true
     review_focus:
-      - 'Mandatory greeting: "I''m Charlie and this here''s Lone Star Doxie Talk."'
+      - 'Mandatory greeting: "Pull up a chair and sit a spell.   I''m Charlie and this here''s Lone Star Doxie Talk." (or special edition override)'
       - 'Mandatory sign-off: "Until next time, remember, a rescued heart never forgets."'
       - Embedded Happy Tails segment dives straight into dog stories without duplicating show intros
       - Clean double-newline paragraph separation for human-like ElevenLabs TTS cadence

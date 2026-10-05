@@ -1,0 +1,33 @@
+Title:  Lone Star Doxie Talk - Episode 12
+OpenMontage Project:  lonestar_doxietalk_ep12
+
+1.  Intro - Charlie welcomes the viewers to the latest episode of Lone Star Doxie Talk.  For this video segment, we will use the default image (charlie_podcast_host_16x9.png) when creating the audio sync'd avatar video.
+
+Charlie mentions that October is one of his favorite months of the year because he really loves Halloween.     "Picking out my costume every year is a bit of a process.   Just like a bride looking for her wedding dress, you try on a lot of NOs before you finally find your YES.  We took our cameras with us down to the costume shop so you could have a glimpse at this year's candidates.   Let's take a look"
+
+2.  The video montage of Charlie trying on different costumes until he comes across the Spooky Dracula.  This was previously generated using OpenMontage project "lonestar-doxietalk-halloween".     
+
+3.  After the montage when we come back to the video podcast, Charlie will be wearing his Spooky Dracula costume.   All dialog delivered from this point to the end of the episode will have Charlie wearing his costume.  We're also going to add a poster for Breast Cancer Awareness Month in the background of the photo we use for the second part of the dialog video.   During this video segment, Charlie will discuss different topics and upcoming CTDR events.  We have previously created the updated starting image for the next video creation task under the "lonestar-doxietalk-halloween" project.  The image is "halloween_charlie_podcast_host_16x9.png".
+
+Topics Charlie will discuss:
+
+- A big thank you to all of the CTDR family members who chipped in to contribute to the CTDR Summertime Fundraiser.   Your donations help to fund boarding at Day Lily (CTDR's veterinary partner), spay or neuter for incoming rescues, vet care, and heartworm treatment.
+
+- Don't forget to order your CTDR 2027 Wall Calendar at their website (ctdr.org).
+
+- Wienerfest is almost here!
+  - Zilkerbark is hosting the 4th Annual Wiener Dog meetup.  
+  - It's happening on Saturday, October 31, 2026, from 10:00 AM to 5:00 PM, out at the Sherwood Forest Faire in McDade, Texas (which is just outside of Austin).
+  - CTDR is planning to be there, wagging our tails and spreading the word about our incredible Doxies. 
+  - https://www.zilkerbark.com/texas-wienerfest#tickets
+
+-  October is Breast Cancer Awareness Month
+   -  The focus for 2026 is:  "Every story is unique, every journey matters"
+   -  Did you know that breast cancer is still the most common non-skin cancer in American women?
+   -  Even so, with early detection the 5 year survival rate is currently just north of 90%!!
+   -  Early detection is critical so if you haven't already, please have a heart-to-heart with your doctor about creating an appropriate screening and self-examination schedule based on your unique medical profile.
+
+4.  September Happy Tails Adoption Stories
+   - This will be created once I have received the pictures and brief adoption bios for CTDR September 2026 adoptions. 
+
+5.  Episode Conclusion
