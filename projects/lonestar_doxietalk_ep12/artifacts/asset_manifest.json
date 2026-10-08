@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "img-otis",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\images\\september_adoptions\\Otis Adoption.jpeg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-04-happy-tails",
+      "duration_seconds": 36.0
+    },
+    {
+      "id": "img-chimera",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\images\\september_adoptions\\Chimera adoption.jpg",
+      "source_tool": "user_upload",
+      "scene_id": "scene-04-happy-tails",
+      "duration_seconds": 44.0
+    },
+    {
+      "id": "img-both-dogs",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\images\\september_adoptions\\both_september_adoptions.png",
+      "source_tool": "composite",
+      "scene_id": "scene-04-happy-tails",
+      "duration_seconds": 18.08
+    },
+    {
+      "id": "img-ctdr-logo",
+      "type": "image",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\images\\ctdr.png",
+      "source_tool": "brand_asset",
+      "scene_id": "scene-04-happy-tails",
+      "duration_seconds": 98.08
+    },
+    {
+      "id": "audio-narration",
+      "type": "narration",
+      "path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\audio\\scene4_happy_tails_audio.mp3",
+      "source_tool": "elevenlabs_tts",
+      "scene_id": "scene-04-happy-tails",
+      "duration_seconds": 98.08
+    }
+  ]
+}

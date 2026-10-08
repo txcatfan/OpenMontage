@@ -1,0 +1,8 @@
+{"ts": "2026-10-07T16:34:20.602985+00:00", "tool": "elevenlabs_tts", "event": "start", "output_path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\audio\\scene4_happy_tails_audio.mp3"}
+{"ts": "2026-10-07T16:34:47.326468+00:00", "tool": "elevenlabs_tts", "event": "finish", "output_path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\assets\\audio\\scene4_happy_tails_audio.mp3", "success": true, "cost_usd": 0.4218, "duration_s": 26.72}
+{"ts": "2026-10-07T16:35:26.730768+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-10-07T16:35:26.732897+00:00", "tool": "transcriber", "event": "error", "error": "'input_path'", "duration_s": 0.0}
+{"ts": "2026-10-07T16:35:35.764952+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-10-07T16:35:35.765951+00:00", "tool": "transcriber", "event": "finish", "success": false, "cost_usd": 0.0, "duration_s": 0.0}
+{"ts": "2026-10-07T16:52:33.558860+00:00", "tool": "video_compose", "event": "start", "output_path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\renders\\scene4_happy_tails.mp4"}
+{"ts": "2026-10-07T17:06:53.414952+00:00", "tool": "video_compose", "event": "finish", "output_path": "C:\\Users\\txcat\\OneDrive\\Documents\\OpenMontage\\projects\\lonestar_doxietalk_ep12\\renders\\scene4_happy_tails.mp4", "success": true, "cost_usd": 0.0, "duration_s": 859.86}

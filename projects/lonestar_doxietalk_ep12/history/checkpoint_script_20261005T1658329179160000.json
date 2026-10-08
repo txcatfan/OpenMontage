@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "project_id": "lonestar_doxietalk_ep12",
+  "pipeline_type": "lonestar-doxietalk",
+  "stage": "script",
+  "status": "awaiting_human",
+  "timestamp": "2026-10-05T16:58:32.917916+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Lone Star Doxie Talk - Episode 12",
+      "total_duration_seconds": 230.0,
+      "voice_performance": {
+        "performance_intent": "Warm, folksy Texan host monologue with natural breath pauses and heartfelt community tone.",
+        "pacing_profile": "conversational",
+        "energy_curve": "Playful and excited for Halloween in the intro, sincere and grateful for fundraiser donors, enthusiastic for Wienerfest, compassionate and earnest for Breast Cancer Awareness, and warm for the farewell.",
+        "pause_policy": "Double-newline paragraph breaks between distinct thoughts to ensure natural human cadence in ElevenLabs TTS."
+      },
+      "sections": [
+        {
+          "id": "sec-01-intro",
+          "label": "Host Welcome & Halloween Teaser",
+          "text": "Pull up a chair and sit a spell.  I'm Charlie and this here's Lone Star Doxie Talk.\n\nWell now friends, I reckon October has rolled right on in, and I have to confess, it is easily one of my absolute favorite months of the entire year. Around these parts, the air finally starts to feel a little less hot, the leaves start turnin', and of course, Halloween is just around the corner.\n\nNow, picking out my costume every year is a bit of a process. Just like a bride looking for her wedding dress, you try on a lot of NOs before you finally find your YES.\n\nWe took our cameras with us down to the costume shop so you could have a glimpse at this year's candidates. Let's take a look!",
+          "start_seconds": 0.0,
+          "end_seconds": 35.0,
+          "speaker_directions": "Warm and friendly direct address, smiling delivery, playful comedic build-up to the montage.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "warm, folksy, playful"
+          }
+        },
+        {
+          "id": "sec-02-montage",
+          "label": "Costume Try-On Montage (B-Roll)",
+          "text": "[Instrumental upbeat acoustic guitar music over costume montage: Hot Dog, Cowboy, Pumpkin, Ghost, Dracula]",
+          "start_seconds": 32.0,
+          "end_seconds": 57.0,
+          "speaker_directions": "No spoken dialogue; up-tempo acoustic guitar BGM."
+        },
+        {
+          "id": "sec-03-news",
+          "label": "CTDR News & Community Announcements",
+          "text": "Well, what do you think? I reckon the Spooky Dracula was the clear winner! Fangs, cape, and all, I am ready for the spooky season.\n\nFirst off today, I want to send out a great big Texas-sized thank you to every single one of our CTDR family members who chipped in to contribute to the CTDR Summertime Fundraiser.\n\nYour donations help to fund boarding at Day Lily, our wonderful veterinary partner, as well as covering spay and neuter for incoming rescues, essential vet care, and life-saving heartworm treatment. Y'all truly keep this rescue wagon rollin', and we are mighty grateful.\n\nNext up, don't forget to head over to ctdr.org and order your CTDR 2027 Wall Calendar. It is packed full of the sweetest doxie faces you ever did see, and every single calendar purchased directly supports our rescue dogs.\n\nAnd mark your calendars, because Wienerfest is almost here! Our friends at Zilkerbark are hosting the 4th Annual Wiener Dog meetup out at the Sherwood Forest Faire in McDade, Texas, just outside of Austin. It's happening on Saturday, October 31st, from 10:00 AM to 5:00 PM. CTDR is planning to be there, wagging our tails and spreading the word about our incredible doxies. You can grab your tickets online at the link down in the description.\n\nNow friends, October is also Breast Cancer Awareness Month, and the focus for 2026 is: Every story is unique, every journey matters.\n\nDid you know that breast cancer is still the most common non-skin cancer in American women?\n\nEven so, with early detection, the five-year survival rate is currently just north of ninety percent. Early detection is critical.\n\nSo if you haven't already, please have a heart-to-heart with your doctor about creating an appropriate screening and self-examination schedule based on your unique medical profile. We love our CTDR family, and we want everyone healthy and strong.",
+          "start_seconds": 57.0,
+          "end_seconds": 195.0,
+          "speaker_directions": "Charlie in Dracula costume. Energetic transition, sincere gratitude for donors, enthusiastic about Wienerfest, shifting into compassionate and serious tone for Breast Cancer Awareness.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "warm, informative, heartfelt"
+          }
+        },
+        {
+          "id": "sec-04-conclusion",
+          "label": "Episode Conclusion & CTA",
+          "text": "Well friends, we've covered a whole lot of ground today! From costume try-outs and Wienerfest excitement, to honoring Breast Cancer Awareness and thanking everyone who supported our summertime pups, it has been a wonderful visit.\n\nIf you'd like to lend a helping paw, whether by fostering, adopting, donating, or volunteering, please visit ctdr.org.\n\nUntil next time, remember, a rescued heart never forgets.",
+          "start_seconds": 195.0,
+          "end_seconds": 230.0,
+          "speaker_directions": "Warm, encouraging recap, sincere volunteer/donation appeal, and solemn trademark sign-off.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "uplifting, heartfelt"
+          }
+        }
+      ]
+    }
+  },
+  "style_playbook": "lonestar-doxietalk",
+  "review": {
+    "reviewer": "script-director",
+    "score": 1.0,
+    "findings": [
+      {
+        "criterion": "Mandatory greeting: \"Pull up a chair and sit a spell.   I'm Charlie and this here's Lone Star Doxie Talk.\"",
+        "status": "passed",
+        "details": "Present as the exact opening sentence in sec-01-intro."
+      },
+      {
+        "criterion": "Mandatory sign-off: \"Until next time, remember, a rescued heart never forgets.\"",
+        "status": "passed",
+        "details": "Present as the exact final sentence in sec-04-conclusion."
+      },
+      {
+        "criterion": "Clean double-newline paragraph separation for human-like ElevenLabs TTS cadence",
+        "status": "passed",
+        "details": "All paragraphs and thoughts cleanly separated by double newlines."
+      },
+      {
+        "criterion": "Conclusion recaps all covered topics and issues CTDR CTA",
+        "status": "passed",
+        "details": "Recaps costume montage, Wienerfest, Breast Cancer Awareness, fundraiser gratitude, and links to ctdr.org."
+      },
+      {
+        "criterion": "Happy Tails adoption stories",
+        "status": "noted",
+        "details": "Held pending receipt of September adoption roster & photos; ready to be slotted before conclusion when provided."
+      }
+    ]
+  }
+}

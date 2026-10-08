@@ -1,0 +1,266 @@
+{
+  "version": "1.0",
+  "style_playbook": "lonestar-doxietalk",
+  "scenes": [
+    {
+      "id": "scene-01-intro",
+      "type": "talking_head",
+      "description": "Charlie at podcast desk in standard reddish-tan studio appearance welcoming listeners with 'Pull up a chair and sit a spell', sharing excitement for October and teeing up the Halloween costume candidates.",
+      "start_seconds": 0.0,
+      "end_seconds": 35.0,
+      "script_section_id": "sec-01-intro",
+      "framing": "Medium shot, eye-level broadcast studio desk",
+      "movement": "Subtle breathing and head motion via talking-head video synthesis",
+      "transition_in": "fade",
+      "transition_out": "dissolve",
+      "overlay_notes": "Lower-third badge: 'Lone Star Doxie Talk | Episode 12 - Host: Charlie'",
+      "shot_language": {
+        "shot_size": "medium",
+        "camera_movement": "static",
+        "lens_mm": 50,
+        "lighting_key": "tungsten_warm",
+        "depth_of_field": "medium",
+        "color_temperature": "warm"
+      },
+      "shot_intent": "Establish warm, welcoming host connection and set up the comedic costume quest.",
+      "narrative_role": "introduce_subject",
+      "information_role": "Welcomes viewers, introduces October season, and frames the costume montage.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "warm studio",
+        "acoustic foam",
+        "intimate",
+        "natural grain"
+      ],
+      "required_assets": [
+        {
+          "type": "image",
+          "description": "Charlie default podcast host studio portrait 16:9 (charlie_podcast_host_16x9.png)",
+          "source": "provided"
+        },
+        {
+          "type": "audio",
+          "description": "Charlie intro narration audio generated with ElevenLabs Charlie voice",
+          "source": "generate"
+        },
+        {
+          "type": "video",
+          "description": "Lip-synced talking head video for Section 1 intro",
+          "source": "generate"
+        }
+      ]
+    },
+    {
+      "id": "scene-02-costume-montage",
+      "type": "broll",
+      "description": "Dynamic quick-cut costume try-on montage: Hot Dog -> Texas Cowboy -> Pumpkin -> Spooky Ghost -> Spooky Dracula (clear winner).",
+      "start_seconds": 35.0,
+      "end_seconds": 60.0,
+      "script_section_id": "sec-02-montage",
+      "framing": "Cinematic costume try-on cutaways (5s each)",
+      "movement": "Active character animation across costume scenes",
+      "transition_in": "dissolve",
+      "transition_out": "dissolve",
+      "overlay_notes": "Quick lower-third labels for each candidate: 'Hot Dog', 'Texas Cowboy', 'Lil Pumpkin', 'Sheet Ghost', 'Spooky Dracula'",
+      "shot_language": {
+        "shot_size": "medium_wide",
+        "camera_movement": "tracking_right",
+        "lens_mm": 35,
+        "lighting_key": "natural",
+        "depth_of_field": "shallow",
+        "color_temperature": "warm"
+      },
+      "shot_intent": "Entertain viewers with Charlie's costume fitting journey and reveal the Halloween look.",
+      "narrative_role": "deliver_payload",
+      "information_role": "Shows the candidate costumes and crowns Spooky Dracula.",
+      "hero_moment": true,
+      "texture_keywords": [
+        "cinematic",
+        "playful",
+        "costume",
+        "vibrant"
+      ],
+      "required_assets": [
+        {
+          "type": "video",
+          "description": "Costume candidate 1: Hot Dog clip (scene1_hotdog_v2_5s.mp4)",
+          "source": "provided"
+        },
+        {
+          "type": "video",
+          "description": "Costume candidate 2: Cowboy clip (scene2_cowboy_5s.mp4)",
+          "source": "provided"
+        },
+        {
+          "type": "video",
+          "description": "Costume candidate 3: Pumpkin clip (scene3_pumpkin_5s.mp4)",
+          "source": "provided"
+        },
+        {
+          "type": "video",
+          "description": "Costume candidate 4: Ghost clip (scene4_ghost_5s.mp4)",
+          "source": "provided"
+        },
+        {
+          "type": "video",
+          "description": "Costume candidate 5: Dracula final clip (scene5_dracula_final_5s.mp4)",
+          "source": "provided"
+        },
+        {
+          "type": "music",
+          "description": "Up-tempo acoustic guitar BGM track at full volume during montage",
+          "source": "provided"
+        }
+      ]
+    },
+    {
+      "id": "scene-03-studio-news",
+      "type": "talking_head",
+      "description": "Charlie back at podcast desk wearing his Spooky Dracula costume with Breast Cancer Awareness Month poster in the background, discussing the Summertime Fundraiser, 2027 Calendar, Wienerfest 2026, and Breast Cancer Awareness advocacy.",
+      "start_seconds": 60.0,
+      "end_seconds": 200.0,
+      "script_section_id": "sec-03-news",
+      "framing": "Medium shot, studio desk with background poster and CTDR mug",
+      "movement": "Subtle breathing and natural head turns via lip-sync synthesis",
+      "transition_in": "dissolve",
+      "transition_out": "dissolve",
+      "overlay_notes": "Timed topic overlays: 1) Thank You CTDR Donors! (Day Lily, Vet Care, Heartworm), 2) CTDR 2027 Calendar (ctdr.org), 3) 4th Annual Wienerfest (Oct 31, McDade TX), 4) Breast Cancer Awareness Month ('Every story is unique, every journey matters')",
+      "shot_language": {
+        "shot_size": "medium",
+        "camera_movement": "static",
+        "lens_mm": 50,
+        "lighting_key": "tungsten_warm",
+        "depth_of_field": "medium",
+        "color_temperature": "warm"
+      },
+      "shot_intent": "Deliver core CTDR news, gratitude, event invitations, and healthcare advocacy in Charlie's Dracula look.",
+      "narrative_role": "deliver_payload",
+      "information_role": "Shares essential community updates, ticket links, donor thanks, and screening guidelines.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "warm studio",
+        "dracula cape",
+        "pink ribbon poster",
+        "authentic"
+      ],
+      "required_assets": [
+        {
+          "type": "image",
+          "description": "Charlie in Dracula costume with Breast Cancer Awareness poster (halloween_charlie_podcast_host_16x9.png)",
+          "source": "provided"
+        },
+        {
+          "type": "audio",
+          "description": "Charlie Section 3 dialogue audio generated with ElevenLabs Charlie voice",
+          "source": "generate"
+        },
+        {
+          "type": "video",
+          "description": "Lip-synced talking head video for Section 3 news and announcements",
+          "source": "generate"
+        }
+      ]
+    },
+    {
+      "id": "scene-04-happy-tails",
+      "type": "animation",
+      "description": "September Happy Tails Adoption Showcase: Remotion motion-graphics reel showcasing September adopted doxies with animated photo cards, adoption dates, and Charlie's voiceover.",
+      "start_seconds": 200.0,
+      "end_seconds": 298.08,
+      "script_section_id": "sec-04-happy-tails",
+      "framing": "Clean centered photo cards with gentle spring physics entrance and CTDR branding",
+      "movement": "Spring physics entrance, gentle float, and smooth fade transition between dogs",
+      "transition_in": "dissolve",
+      "transition_out": "dissolve",
+      "overlay_notes": "Dog name, adoption date badge, and CTDR Happy Tails watermark",
+      "shot_language": {
+        "shot_size": "medium",
+        "camera_movement": "static",
+        "lens_mm": 50,
+        "lighting_key": "high_key",
+        "depth_of_field": "shallow",
+        "color_temperature": "warm"
+      },
+      "shot_intent": "Celebrate rescue milestones and showcase adopted dogs finding forever homes.",
+      "narrative_role": "emotional_beat",
+      "information_role": "Highlights adopted dogs and their heartwarming success stories.",
+      "hero_moment": true,
+      "texture_keywords": [
+        "clean",
+        "celebratory",
+        "gentle spring physics",
+        "high key"
+      ],
+      "required_assets": [
+        {
+          "type": "image",
+          "description": "Collection of September adopted dog photos",
+          "source": "provided"
+        },
+        {
+          "type": "audio",
+          "description": "Charlie Happy Tails voiceover narration",
+          "source": "generate"
+        }
+      ]
+    },
+    {
+      "id": "scene-05-conclusion",
+      "type": "talking_head",
+      "description": "Charlie in Dracula costume wraps up the episode, directs viewers to ctdr.org to foster, adopt, or donate, and delivers the signature sign-off.",
+      "start_seconds": 298.08,
+      "end_seconds": 333.08,
+      "script_section_id": "sec-05-conclusion",
+      "framing": "Medium shot closing in slightly on Charlie at studio desk",
+      "movement": "Natural head turns and direct warm eye-contact with camera",
+      "transition_in": "dissolve",
+      "transition_out": "fade",
+      "overlay_notes": "Final CTA card: ctdr.org | Central Texas Dachshund Rescue | 'Until next time, remember, a rescued heart never forgets.'",
+      "shot_language": {
+        "shot_size": "medium_close",
+        "camera_movement": "static",
+        "lens_mm": 85,
+        "lighting_key": "tungsten_warm",
+        "depth_of_field": "shallow",
+        "color_temperature": "warm"
+      },
+      "shot_intent": "Re-engage viewers with emotional call to action and leave an enduring warm impression.",
+      "narrative_role": "call_to_action",
+      "information_role": "Calls for volunteers, fosters, and donors, signing off with beloved catchphrase.",
+      "hero_moment": false,
+      "texture_keywords": [
+        "warm",
+        "poignant",
+        "heartfelt",
+        "cozy studio"
+      ],
+      "required_assets": [
+        {
+          "type": "image",
+          "description": "Charlie Dracula costume host portrait 16:9 (halloween_charlie_podcast_host_16x9.png)",
+          "source": "provided"
+        },
+        {
+          "type": "audio",
+          "description": "Charlie conclusion dialogue audio generated with ElevenLabs Charlie voice",
+          "source": "generate"
+        },
+        {
+          "type": "video",
+          "description": "Lip-synced talking head video for Section 5 conclusion",
+          "source": "generate"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "audio_plan": {
+      "bgm_track": "acoustic country/folk guitar",
+      "ducking_level_db": -18.0,
+      "ducking_fade_seconds": 0.5,
+      "montage_bgm_level_db": 0.0
+    },
+    "host_character": "Charlie",
+    "host_voice_id": "GdPqjbdsuwHYqzHrC45c"
+  }
+}

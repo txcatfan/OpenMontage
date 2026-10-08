@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "project_id": "lonestar_doxietalk_ep12",
+  "pipeline_type": "lonestar-doxietalk",
+  "stage": "publish",
+  "status": "completed",
+  "timestamp": "2026-10-08T15:39:28.858186+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "publish_manifest": {
+      "description_file": "artifacts/youtube_description.txt",
+      "thumbnail_file": "renders/youtube_thumbnail.png"
+    }
+  }
+}

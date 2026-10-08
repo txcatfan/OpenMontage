@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "project_id": "lonestar_doxietalk_ep12",
+  "pipeline_type": "lonestar-doxietalk",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-10-08T14:27:26.911104+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": true,
+  "artifacts": {
+    "render_report": {
+      "master_video": "renders/final_episode.mp4",
+      "duration_seconds": 345.2,
+      "resolution": "1920x1080"
+    }
+  }
+}

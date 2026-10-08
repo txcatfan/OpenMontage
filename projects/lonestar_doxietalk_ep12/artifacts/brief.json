@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "title": "Lone Star Doxie Talk - Episode 12",
+  "hook": "Pull up a chair and sit a spell.   I'm Charlie and this here's Lone Star Doxie Talk. October is one of my favorite months of the year because I really love Halloween!",
+  "key_points": [
+    "Charlie's Halloween costume search and try-on montage culminating in Spooky Dracula",
+    "Return to studio in Dracula costume with Breast Cancer Awareness Month poster in background",
+    "Thank you to CTDR community for the Summertime Fundraiser supporting medical care, boarding, spay/neuter, and heartworm treatment",
+    "CTDR 2027 Wall Calendar orders at ctdr.org",
+    "4th Annual Wienerfest hosted by Zilkerbark on Oct 31, 2026 at Sherwood Forest Faire in McDade, TX",
+    "October Breast Cancer Awareness Month: 'Every story is unique, every journey matters', early detection, and checkups",
+    "September 2026 Happy Tails adoption stories (held pending receipt of dog bios and pictures)",
+    "Episode wrap-up, volunteer/donation/adoption call to action, and Charlie's signature sign-off"
+  ],
+  "core_message": "Celebrate October with rescue milestones, Halloween costume fun, community Wienerfest anticipation, and vital breast cancer awareness advocacy.",
+  "cta": "Visit ctdr.org to order your 2027 calendar, foster, adopt, or donate, get Wienerfest tickets at zilkerbark.com, and schedule your health checkups.",
+  "tone": "warm, folksy, heartfelt Southern charm",
+  "style": "lonestar-doxietalk",
+  "target_platform": "youtube",
+  "target_duration_seconds": 300,
+  "reference_material": [
+    "projects/lonestar_doxietalk_ep12/episode_starting_outline.txt"
+  ],
+  "metadata": {
+    "episode_number": 12,
+    "month": "October 2026",
+    "host": "Charlie",
+    "host_voice_id": "GdPqjbdsuwHYqzHrC45c",
+    "mandatory_opening_anchor": "Pull up a chair and sit a spell.   I'm Charlie and this here's Lone Star Doxie Talk.",
+    "mandatory_closing_anchor": "Until next time, remember, a rescued heart never forgets.",
+    "host_starting_images": {
+      "part_1_intro": "charlie_podcast_host_16x9.png",
+      "part_2_post_montage": "halloween_charlie_podcast_host_16x9.png"
+    },
+    "segments": [
+      {
+        "segment_id": 1,
+        "name": "Host Intro & Halloween Costume Teaser",
+        "visual_type": "talking_head",
+        "starting_image": "charlie_podcast_host_16x9.png"
+      },
+      {
+        "segment_id": 2,
+        "name": "Costume Try-On Montage",
+        "visual_type": "video_montage",
+        "clips": [
+          "scene1_hotdog_v2_5s.mp4",
+          "scene2_cowboy_5s.mp4",
+          "scene3_pumpkin_5s.mp4",
+          "scene4_ghost_5s.mp4",
+          "scene5_dracula_final_5s.mp4"
+        ]
+      },
+      {
+        "segment_id": 3,
+        "name": "CTDR News & Community Announcements",
+        "visual_type": "talking_head",
+        "starting_image": "halloween_charlie_podcast_host_16x9.png",
+        "topics": [
+          "CTDR Summertime Fundraiser donor gratitude",
+          "CTDR 2027 Wall Calendar",
+          "4th Annual Wienerfest (Oct 31, 2026, Sherwood Forest Faire)",
+          "Breast Cancer Awareness Month"
+        ]
+      },
+      {
+        "segment_id": 4,
+        "name": "September Happy Tails Adoption Showcase",
+        "visual_type": "photo_cards_montage",
+        "status": "pending_dog_roster"
+      },
+      {
+        "segment_id": 5,
+        "name": "Episode Conclusion & CTA",
+        "visual_type": "talking_head",
+        "starting_image": "halloween_charlie_podcast_host_16x9.png"
+      }
+    ]
+  }
+}

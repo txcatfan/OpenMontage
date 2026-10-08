@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "project_id": "lonestar_doxietalk_ep12",
+  "title": "Lone Star Doxie Talk - Episode 12: Halloween Special & September Happy Tails",
+  "status": "ready_for_publish",
+  "platform": "youtube",
+  "metadata": {
+    "title": "Lone Star Doxie Talk Ep. 12 | Halloween Special: Dracula Charlie, Wienerfest & Happy Tails!",
+    "description_file": "artifacts/youtube_description.txt",
+    "thumbnail_file": "renders/youtube_thumbnail.png",
+    "video_file": "renders/final_episode.mp4",
+    "total_duration_seconds": 345.2,
+    "tags": [
+      "Dachshund",
+      "CTDR",
+      "Central Texas Dachshund Rescue",
+      "Lone Star Doxie Talk",
+      "Adopt Dont Shop",
+      "Rescue Dogs",
+      "Wiener Dog",
+      "Happy Tails",
+      "Wienerfest 2026",
+      "Dracula Charlie",
+      "Breast Cancer Awareness"
+    ],
+    "chapters": [
+      {
+        "time": "0:00",
+        "title": "Introduction & Halloween Excitement"
+      },
+      {
+        "time": "0:44",
+        "title": "Costume Shop Try-On Montage"
+      },
+      {
+        "time": "1:09",
+        "title": "Dracula Charlie Reveal"
+      },
+      {
+        "time": "1:19",
+        "title": "Summertime Fundraiser Thank You"
+      },
+      {
+        "time": "1:49",
+        "title": "Order Your CTDR 2027 Wall Calendar"
+      },
+      {
+        "time": "2:06",
+        "title": "Wienerfest 2026 Announcement (McDade, TX)"
+      },
+      {
+        "time": "2:48",
+        "title": "Breast Cancer Awareness Month: Early Detection"
+      },
+      {
+        "time": "3:36",
+        "title": "September Happy Tails Adoptions"
+      },
+      {
+        "time": "3:45",
+        "title": "Happy Tails: Otis (Lake Jackson, TX)"
+      },
+      {
+        "time": "4:12",
+        "title": "Happy Tails: Chimera & Cerberus (Round Rock, TX)"
+      },
+      {
+        "time": "4:56",
+        "title": "Thank You Fosters & Adopters"
+      },
+      {
+        "time": "5:15",
+        "title": "How to Support CTDR & Sign-Off"
+      }
+    ]
+  }
+}

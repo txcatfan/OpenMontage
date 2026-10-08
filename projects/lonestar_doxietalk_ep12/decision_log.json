@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "project_id": "lonestar_doxietalk_ep12",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "idea",
+      "category": "pipeline_selection",
+      "subject": "Production pipeline for Episode 12",
+      "options_considered": [
+        {
+          "option_id": "lonestar-doxietalk",
+          "label": "Lone Star Doxie Talk Pipeline",
+          "score": 1.0,
+          "reason": "Dedicated CTDR monthly video podcast pipeline."
+        }
+      ],
+      "selected": "lonestar-doxietalk",
+      "reason": "Directly matches show identity and multi-segment structure.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "idea",
+      "category": "playbook_selection",
+      "subject": "Style playbook for Episode 12",
+      "options_considered": [
+        {
+          "option_id": "lonestar-doxietalk",
+          "label": "Lone Star Doxie Talk Playbook",
+          "score": 1.0,
+          "reason": "Specifies warm rustic palette, Outfit/Inter typography, and acoustic country guitar BGM."
+        }
+      ],
+      "selected": "lonestar-doxietalk",
+      "reason": "Official visual and audio identity for the show.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "idea",
+      "category": "voice_selection",
+      "subject": "Host Voice Model",
+      "options_considered": [
+        {
+          "option_id": "elevenlabs-charlie",
+          "label": "ElevenLabs Charlie Voice (GdPqjbdsuwHYqzHrC45c)",
+          "score": 1.0,
+          "reason": "Official custom-cloned Charlie voice with warm Texan accent."
+        }
+      ],
+      "selected": "elevenlabs-charlie",
+      "reason": "Standard host voice for Charlie.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "idea",
+      "category": "concept_selection",
+      "subject": "Episode 12 Structure and Visual Anchors",
+      "options_considered": [
+        {
+          "option_id": "halloween-spooky-dracula-hybrid",
+          "label": "Halloween Costume Montage + Spooky Dracula Host Portrait",
+          "score": 1.0,
+          "reason": "Integrates pre-rendered costume try-on montage and transitions Charlie into his Dracula costume."
+        }
+      ],
+      "selected": "halloween-spooky-dracula-hybrid",
+      "reason": "Exact structure requested in episode starting outline.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "publish",
+      "category": "publish_packaging",
+      "subject": "YouTube Packaging and Thumbnail Design",
+      "options_considered": [
+        {
+          "option_id": "dracula-charlie-feature-cards-thumbnail",
+          "label": "Dracula Charlie Hero + Lone Star Doxie Talk Branding + Segment Feature Cards",
+          "score": 1.0,
+          "reason": "Highlights host costume reveal with bold high-contrast headline and episode topic callouts."
+        }
+      ],
+      "selected": "dracula-charlie-feature-cards-thumbnail",
+      "reason": "Accurately showcases the Halloween special, Wienerfest announcement, and September Happy Tails adoptions.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    }
+  ]
+}

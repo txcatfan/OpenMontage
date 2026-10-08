@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "project_id": "lonestar_doxietalk_ep12",
+  "pipeline_type": "lonestar-doxietalk",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-10-07T12:08:15.000000+00:00",
+  "checkpoint_policy": "automatic",
+  "human_approval_required": false,
+  "human_approved": true,
+  "artifacts": {
+    "edit_decisions": {
+      "render_runtime": "remotion",
+      "renderer_family": "explainer-data",
+      "cuts_count": 3,
+      "overlays_count": 3
+    }
+  }
+}
